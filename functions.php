@@ -55,6 +55,9 @@ add_action( 'after_setup_theme', 'cupimlom_setup' );
  */
 function cupimlom_scripts() {
 	// Styles
+	wp_enqueue_style('bootstrap-grid', get_template_directory_uri() . '/assets/libs/bootstrap-grid/bootstrap-grid.min.css', array(), _S_VERSION);
+	wp_enqueue_style('magnific-popup', get_template_directory_uri() . '/assets/libs/magnific-popup/magnific-popup.css', array(), _S_VERSION);
+	wp_enqueue_style('jquery.scrollbar', get_template_directory_uri() . '/assets/libs/scrollbar/jquery.scrollbar.css', array(), _S_VERSION);
 	wp_enqueue_style('main', get_template_directory_uri() .  '/assets/css/main.css', array(), _S_VERSION);
 	wp_enqueue_style( 'cupimlom-style', get_stylesheet_uri(), array(), _S_VERSION );
 
