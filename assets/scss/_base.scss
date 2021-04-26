@@ -29,10 +29,13 @@ body {
   overflow: hidden !important;
 }
 .text-link {
-  font-weight: 500;
+  font-weight: bold;
   font-size: 14px;
-  // color: $text-green;
+  line-height: 17px;
   text-decoration: underline;
+  &:hover{
+    color: $accent-red;
+  }
 }
 .h-100p {
   height: 100%;
@@ -114,6 +117,10 @@ body {
   margin-right: 10px;
 }
 
+.color-wthite{
+  color: #fff;
+}
+
 .d-flex {
   display: flex;
 }
@@ -128,6 +135,12 @@ body {
 }
 .flex-direction-column {
   flex-direction: column;
+}
+
+.container-wrapper{
+  position: relative;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 //Socials

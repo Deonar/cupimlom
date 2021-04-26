@@ -1,0 +1,137 @@
+.main-form {
+    &__wrapper {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__input {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        width: 100%;
+        max-width: 200px;
+    }
+    &__label {
+        display: block;
+        position: relative;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        &._error {
+            input {
+                border: 1px solid #d10000;
+            }
+            .main-form__label-error {
+                display: block;
+            }
+        }
+        input:focus {
+            outline: none;
+            // border: 1px solid $primary;
+        }
+    }
+    &__label-error {
+        display: none;
+        position: absolute;
+        left: 1px;
+        bottom: 98%;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px;
+        color: #d10000;
+    }
+    &__phone {
+        outline: none;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        position: relative;
+        width: 100%;
+        max-width: 200px;
+        border: none;
+        line-height: 60px;
+        height: 60px;
+        padding-left: 20px;
+        background: #ffffff;
+        border-radius: 3px;
+        &:focus,
+        &:hover {
+            outline: none;
+        }
+    }
+    &__text {
+        color: #fff;
+        a {
+            // color: $text-placeholder;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__policy {
+        display: flex;
+        align-items: center;
+        a {
+        }
+    }
+    &__checkbox {
+        display: none;
+        &:checked + .main-form__checkbox-box {
+            background-color: $accent-red;
+            border: 1px solid $accent-red;
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+    &__checkbox-box {
+        position: relative;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+        min-height: 24px;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        margin-right: 10px;
+        cursor: pointer;
+        &::before {
+            opacity: 0;
+            content: "";
+            position: absolute;
+            display: inline-block;
+            left: 6px;
+            top: 2px;
+            width: 6px;
+            height: 10px;
+            border: solid #fff;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+    &__submit {
+        padding: 21px;
+    }
+}
+
+@media (max-width: 420px) {
+    .main-form {
+        &__input{
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+        &__phone{
+            max-width: 100%;
+            width: 100%;
+        }
+        &__wrapper {
+            display: block;
+        }
+        &__submit {
+            padding: 21px;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
