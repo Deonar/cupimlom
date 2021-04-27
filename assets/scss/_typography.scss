@@ -10,23 +10,24 @@ h4,
 h5,
 .h6,
 h6 {
-
 }
 
-.title {
-
+.primary-title {
+    font-family: "RobotoCondensed";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
 }
 
 .h1 {
-
 }
 
 .h3 {
- 
 }
 
 .h4 {
-
 }
 
 .h2,
@@ -56,4 +57,3 @@ p,
 
 a {
 }
-

@@ -95,5 +95,261 @@ get_header();
     </div>
 </main>
 
+<section class="padding-normal padding-double-top">
+    <div class="container-wrapper">
+        <div class="metal-grid__title mb-50">
+            <h2 class="primary-title">
+                принимаемое<br> сырьё
+            </h2>
+        </div>
+        <div class="grid-square">
+            <div class="grid-square__col">
+                <a href="#" class="grid-square__item">
+                    <div class="grid-square__number">
+                        29
+                    </div>
+                    <div class="grid-square__icon">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H22C23.6569 1 25 2.34315 25 4V25M1.5 24.5L23.5 2.5" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                    <div class="grid-square__description">
+                        <h4 class="grid-square__title">
+                            Медь
+                        </h4>
+                        <p class="grid-square__text">
+                            от 200 руб/кг
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-square__col">
+                <a href="#" class="grid-square__item">
+                    <div class="grid-square__number">
+                        29
+                    </div>
+                    <div class="grid-square__icon">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H22C23.6569 1 25 2.34315 25 4V25M1.5 24.5L23.5 2.5" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                    <div class="grid-square__description">
+                        <h4 class="grid-square__title">
+                            Медь
+                        </h4>
+                        <p class="grid-square__text">
+                            от 200 руб/кг
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-square__col">
+                <a href="#" class="grid-square__item">
+                    <div class="grid-square__number">
+                        29
+                    </div>
+                    <div class="grid-square__icon">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H22C23.6569 1 25 2.34315 25 4V25M1.5 24.5L23.5 2.5" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                    <div class="grid-square__description">
+                        <h4 class="grid-square__title">
+                            Медь
+                        </h4>
+                        <p class="grid-square__text">
+                            от 200 руб/кг
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-square__col">
+                <a href="#" class="grid-square__item">
+                    <div class="grid-square__number">
+                        29
+                    </div>
+                    <div class="grid-square__icon">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H22C23.6569 1 25 2.34315 25 4V25M1.5 24.5L23.5 2.5" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                    <div class="grid-square__description">
+                        <h4 class="grid-square__title">
+                            Медь
+                        </h4>
+                        <p class="grid-square__text">
+                            от 200 руб/кг
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-square__col">
+                <div class="grid-square__item">
+                    <div class="grid-square__number">
+                        29
+                    </div>
+                    <div class="grid-square__icon">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H22C23.6569 1 25 2.34315 25 4V25M1.5 24.5L23.5 2.5" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                    <div class="grid-square__description">
+                        <h4 class="grid-square__title">
+                            Медь
+                        </h4>
+                        <p class="grid-square__text">
+                            от 200 руб/кг
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-square__col">
+                <a href="#" class="grid-square__item">
+                    <div class="grid-square__number">
+                        29
+                    </div>
+                    <div class="grid-square__icon">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H22C23.6569 1 25 2.34315 25 4V25M1.5 24.5L23.5 2.5" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                    <div class="grid-square__description">
+                        <h4 class="grid-square__title">
+                            Медь
+                        </h4>
+                        <p class="grid-square__text">
+                            от 200 руб/кг
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="grid-rectangle">
+            <div class="grid-rectangle__col">
+                <a href="#" class="grid-rectangle__item">
+                    <div class="grid-rectangle__description">
+                        <h4 class="grid-rectangle__title">
+                            Медь
+                        </h4>
+                        <p class="grid-rectangle__text">
+                            от 200 руб/кг
+                        </p>
+                    </div>
+                    <div class="grid-rectangle__icon">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H22C23.6569 1 25 2.34315 25 4V25M1.5 24.5L23.5 2.5" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-rectangle__col">
+                <a href="#" class="grid-rectangle__item">
+                    <div class="grid-rectangle__description">
+                        <h4 class="grid-rectangle__title">
+                            Медь
+                        </h4>
+                        <p class="grid-rectangle__text">
+                            от 200 руб/кг
+                        </p>
+                    </div>
+                    <div class="grid-rectangle__icon">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H22C23.6569 1 25 2.34315 25 4V25M1.5 24.5L23.5 2.5" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-rectangle__col">
+                <a href="#" class="grid-rectangle__item">
+                    <div class="grid-rectangle__description">
+                        <h4 class="grid-rectangle__title">
+                            Медь
+                        </h4>
+                        <p class="grid-rectangle__text">
+                            от 200 руб/кг
+                        </p>
+                    </div>
+                    <div class="grid-rectangle__icon">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H22C23.6569 1 25 2.34315 25 4V25M1.5 24.5L23.5 2.5" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-rectangle__col">
+                <a href="#" class="grid-rectangle__item">
+                    <div class="grid-rectangle__description">
+                        <h4 class="grid-rectangle__title">
+                            Медь
+                        </h4>
+                        <p class="grid-rectangle__text">
+                            от 200 руб/кг
+                        </p>
+                    </div>
+                    <div class="grid-rectangle__icon">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H22C23.6569 1 25 2.34315 25 4V25M1.5 24.5L23.5 2.5" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-rectangle__col">
+                <a href="#" class="grid-rectangle__item">
+                    <div class="grid-rectangle__description">
+                        <h4 class="grid-rectangle__title">
+                            Медь
+                        </h4>
+                        <p class="grid-rectangle__text">
+                            от 200 руб/кг
+                        </p>
+                    </div>
+                    <div class="grid-rectangle__icon">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H22C23.6569 1 25 2.34315 25 4V25M1.5 24.5L23.5 2.5" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-rectangle__col">
+                <a href="#" class="grid-rectangle__item">
+                    <div class="grid-rectangle__description">
+                        <h4 class="grid-rectangle__title">
+                            Медь
+                        </h4>
+                        <p class="grid-rectangle__text">
+                            от 200 руб/кг
+                        </p>
+                    </div>
+                    <div class="grid-rectangle__icon">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H22C23.6569 1 25 2.34315 25 4V25M1.5 24.5L23.5 2.5" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="padding-normal">
+    <div class="container-wrapper">
+        <div class="calculator">
+            <div class="calculator__head">
+                <h2 class="primary-title mb-20">
+                    калькулятор
+                </h2>
+                <p class="color-gray">
+                    Узнайте предварительную<br>
+                    стоимость сырья
+                </p>
+            </div>
+            <div class="calculator__body">
+                <div class="select-metal">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php get_footer();

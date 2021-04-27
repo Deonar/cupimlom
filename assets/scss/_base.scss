@@ -15,7 +15,7 @@ body {
   line-height: 1.4;
   color: $black;
 
-  background-color: #c6c6c6;
+  // background-color: #c6c6c6;
 }
 .text-center {
   text-align: center;
@@ -117,8 +117,23 @@ body {
   margin-right: 10px;
 }
 
+// Padding
+.padding-normal{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.padding-double-top{
+  padding-top: 80px;
+}
+
+// Color
 .color-wthite{
   color: #fff;
+}
+
+.color-gray{
+  color: $gray;
 }
 
 .d-flex {
