@@ -1,0 +1,138 @@
+.calculator {
+    padding: 50px;
+    background: $gray-light;
+    border-radius: 10px;
+    display: flex;
+    &__head {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+    &__wrap {
+        flex: 0 0 66.66%;
+        max-width: 66.66%;
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__total-price {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 43px;
+    }
+}
+.select-metal {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #a2a6ab4d;
+    &__text {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    &__price {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+.calculator-range {
+    display: flex;
+    justify-content: space-between;
+    &__item {
+        flex: 0 0 45%;
+        max-width: 45%;
+        width: 45%;
+    }
+    &__label {
+        font-family: "RobotoCondensed";
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+}
+
+.hexagon {
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+}
+
+.custom-range {
+    &.ui-widget.ui-widget-content {
+        border: none;
+        background: #a2a6ab4d;
+        height: 2px;
+        display: block;
+    }
+    &.ui-widget.ui-widget-content .ui-slider-range-min {
+        height: 100%;
+        background-color: $black;
+    }
+    &.ui-widget.ui-widget-content .ui-slider-handle {
+        height: 18px;
+        width: 18px;
+        background-color: $black;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+        top: -7px;
+        margin-left: -8px;
+    }
+}
+
+@media (max-width: 992px) {
+    .calculator {
+        display: block;
+        &__head {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        &__wrap {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .calculator-range {
+        display: block;
+        &__item {
+            flex: 0 0 100%;
+            max-width: 100%;
+            width: 100%;
+            &:first-child{
+                margin-bottom: 30px;
+            }
+        }
+        &__label {
+        }
+    }
+}
+
+
+@media (max-width: 420px) {
+    .calculator{
+        padding: 30px;
+        &__bottom{
+            display: block;
+        }
+        &__submit{
+            margin-top: 30px;
+        }
+    }
+    .select-metal{
+        &__price{
+            display: none;
+        }
+    }
+}

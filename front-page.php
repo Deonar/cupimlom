@@ -19,7 +19,7 @@ get_header();
             </h1>
             <!-- Phone form  -->
             <form class="main-form" action="#">
-                <span class="main-form__label mb-10 color-wthite">Укажите ваш номер</span>
+                <span class="main-form__label mb-10 color-white">Укажите ваш номер</span>
                 <div class="main-form__wrapper">
                     <label class="main-form__input">
                         <input value="" class="main-form__phone mask-phone" type="tel" name="phone" id="client-phone" placeholder="+7 (___) ___-__-__" maxlength="16">
@@ -334,7 +334,7 @@ get_header();
 <section class="padding-normal">
     <div class="container-wrapper">
         <div class="calculator">
-            <div class="calculator__head">
+            <div class="calculator__head mb-50">
                 <h2 class="primary-title mb-20">
                     калькулятор
                 </h2>
@@ -343,13 +343,55 @@ get_header();
                     стоимость сырья
                 </p>
             </div>
-            <div class="calculator__body">
-                <div class="select-metal">
+            <div class="calculator__wrap">
 
+                <div class="select-metal mb-30">
+                    <div class="hexagon mr-20" style="background-image: url(https://sdaykat.ru/wp-content/uploads/front-page-bg.jpg);">
+                    </div>
+                    <div class="mt-auto">
+                        <p class="color-gray select-metal__text">Выберите тип сырья</p>
+                        <select class="custom-select_js">
+                            <option value="1">Нержавейка</option>
+                            <option value="2">Медь</option>
+                            <option value="3">Алюминий</option>
+                            <option value="4">Свинец</option>
+                            <option value="5">Цинк</option>
+                            <option value="6">Латунь</option>
+                        </select>
+                    </div>
+                    <p class="ml-auto select-metal__price color-gray">
+                        от 200 руб/кг
+                    </p>
+                </div>
+
+                <div class="calculator-range mb-50">
+                    <div class="calculator-range__item">
+                        <p class="color-gray select-metal__text mb-10">Вес сырья</p>
+                        <div class="calculator-range__label">35 кг</div>
+                        <div id="calculate-range-weight" class="options-item__range custom-range"></div>
+                    </div>
+                    <div class="calculator-range__item">
+                        <p class="color-gray select-metal__text mb-10">% загрязненности</p>
+                        <div class="calculator-range__label">10%</div>
+                        <div id="calculate-range-pollution" class="options-item__range custom-range"></div>
+                    </div>
+                </div>
+
+                <div class="calculator__bottom">
+                    <div>
+                        <div class="calculator__total-price mb-10">
+                            от 20 000 руб
+                        </div>
+                        <p class="color-gray select-metal__text mb-10">от 200 руб/кг</p>
+                    </div>
+                    <a href="#" class="btn btn_accent calculator__submit">
+                        Оставить заявку
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <?php get_footer();

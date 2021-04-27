@@ -87,7 +87,7 @@
 .scroll-wrapper > .scroll-element div {
     display: block;
     height: 100%;
-    left: 0;
+    right: 0;
     top: 0;
     width: 4px;
 }
@@ -101,7 +101,7 @@
 
 .scroll-wrapper > .scroll-element.scroll-y {
     height: 100%;
-    left: 2px;
+    right: 3px;
     top: 0;
     width: 4px;
 }
@@ -118,8 +118,8 @@
     border-radius: 8px;
 }
 
-.scroll-wrapper > .scroll-element .scroll-element_track { background-color: #e0e0e0; }
-.scroll-wrapper > .scroll-element .scroll-bar { background-color: #00efdf; width:3px; }
+.scroll-wrapper > .scroll-element .scroll-element_track { background-color: transparent; }
+.scroll-wrapper > .scroll-element .scroll-bar { background-color: #EBEEF3; width:4px; }
 .scroll-wrapper > .scroll-element:hover .scroll-bar { background-color: #919191; }
 .scroll-wrapper > .scroll-element.scroll-draggable .scroll-bar { background-color: #919191; }
 
