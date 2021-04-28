@@ -37,6 +37,14 @@
         font-size: 16px;
         line-height: 22px;
     }
+    &__img{
+        border-radius: 50%;
+        overflow: hidden;
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 .calculator-range {
@@ -55,14 +63,6 @@
         text-transform: uppercase;
         margin-bottom: 20px;
     }
-}
-
-.hexagon {
-    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
-    width: 60px;
-    height: 60px;
-    background-size: cover;
-    background-position: center;
 }
 
 .custom-range {

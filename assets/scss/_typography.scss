@@ -19,6 +19,19 @@ h6 {
     font-size: 36px;
     line-height: 42px;
     text-transform: uppercase;
+    &.h3 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+.big-text {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+}
+.small-text {
+    font-size: 14px;
 }
 
 .h1 {

@@ -10,7 +10,7 @@ body {
   position: relative;
   font-family: $base-font;
   font-style: normal;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   color: $black;
@@ -33,7 +33,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   text-decoration: underline;
-  &:hover{
+  &:hover {
     color: $accent-red;
   }
 }
@@ -118,22 +118,26 @@ body {
 }
 
 // Padding
-.padding-normal{
+.padding-normal {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.padding-double-top{
+.padding-double-top {
   padding-top: 80px;
 }
 
 // Color
-.color-white{
+.color-white {
   color: #fff;
 }
 
-.color-gray{
+.color-gray {
   color: $gray;
+}
+
+.color-red {
+  color: $accent-red;
 }
 
 .d-flex {
@@ -152,25 +156,28 @@ body {
   flex-direction: column;
 }
 
-.container-wrapper{
+.container-wrapper {
   position: relative;
   padding-left: 70px;
   padding-right: 70px;
 }
 
+.content-wrap{
+  max-width: 765px;
+}
 //Socials
-.social{
-  &__list{
+.social {
+  &__list {
     display: flex;
     align-items: center;
   }
-  &__item{
+  &__item {
     margin-right: 10px;
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
   }
-  &__link{
+  &__link {
     border: 1px solid #ffffff1a;
     width: 60px;
     height: 60px;
@@ -180,8 +187,8 @@ body {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    &:hover{
-      svg{
+    &:hover {
+      svg {
         fill: $accent-red;
       }
     }
@@ -225,13 +232,46 @@ body {
 .btn_accent {
   background: $accent-red;
   &:hover {
-    background: #E14604;
+    background: #e14604;
   }
   &:active {
     background: $accent-red;
   }
 }
 
+//Hexagon
+.hexagon {
+  width: 105px;
+  height: 114px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content {
+    font-family: "RobotoCondensed";
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  &__svg {
+    position: absolute;
+    bottom: 0;
+    width: 105px;
+    height: 114px;
+    svg {
+      width: 100%;
+      height: auto;
+      stroke: $gray;
+    }
+  }
+  &_white {
+    .hexagon__svg {
+      svg {
+        stroke: #fff;
+      }
+    }
+  }
+}
 
 //Custom select
 .selectize-input {
@@ -245,11 +285,11 @@ body {
   width: 180px;
   cursor: pointer;
   &.full {
-      background-color: transparent;
-      box-shadow: none;
+    background-color: transparent;
+    box-shadow: none;
   }
-  input{
-      display: none!important;
+  input {
+    display: none !important;
   }
 }
 
@@ -278,7 +318,7 @@ body {
   border-width: 0 5px 6px 5px;
   border-color: transparent transparent $black transparent;
 }
-.selectize-input.dropdown-active::before{
+.selectize-input.dropdown-active::before {
   display: none;
 }
 .selectize-dropdown {
@@ -288,17 +328,17 @@ body {
   border-radius: 5px;
   overflow: hidden;
   .option {
-      cursor: pointer;
-      color: $gray;
-      padding: 5px 10px;
-      &:first-child{
-          padding-top: 10px;
-      }
-      &:last-child{
-          padding-bottom: 10px;
-      }
-      &:hover{
-          color: $accent-red;
-      }
+    cursor: pointer;
+    color: $gray;
+    padding: 5px 10px;
+    &:first-child {
+      padding-top: 10px;
+    }
+    &:last-child {
+      padding-bottom: 10px;
+    }
+    &:hover {
+      color: $accent-red;
+    }
   }
 }

@@ -389,6 +389,21 @@ button {
   text-transform: uppercase;
 }
 
+.primary-title.h3 {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.big-text {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.small-text {
+  font-size: 14px;
+}
+
 *,
 *::before,
 *::after {
@@ -402,7 +417,7 @@ body {
   position: relative;
   font-family: "SFProDisplay", sans-serif;
   font-style: normal;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   color: #333;
@@ -550,6 +565,10 @@ body {
   color: #A2A6AB;
 }
 
+.color-red {
+  color: #EA591A;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -584,6 +603,10 @@ body {
   position: relative;
   padding-left: 70px;
   padding-right: 70px;
+}
+
+.content-wrap {
+  max-width: 765px;
 }
 
 .social__list {
@@ -670,11 +693,50 @@ body {
 }
 
 .btn_accent:hover {
-  background: #E14604;
+  background: #e14604;
 }
 
 .btn_accent:active {
   background: #EA591A;
+}
+
+.hexagon {
+  width: 105px;
+  height: 114px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hexagon__content {
+  font-family: "RobotoCondensed";
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.hexagon__svg {
+  position: absolute;
+  bottom: 0;
+  width: 105px;
+  height: 114px;
+}
+
+.hexagon__svg svg {
+  width: 100%;
+  height: auto;
+  stroke: #A2A6AB;
+}
+
+.hexagon_white .hexagon__svg svg {
+  stroke: #fff;
 }
 
 .selectize-input {
@@ -974,6 +1036,15 @@ body {
   line-height: 22px;
 }
 
+.select-metal__img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+}
+
 .calculator-range {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -998,15 +1069,6 @@ body {
   line-height: 26px;
   text-transform: uppercase;
   margin-bottom: 20px;
-}
-
-.hexagon {
-  -webkit-clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
-          clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
-  width: 60px;
-  height: 60px;
-  background-size: cover;
-  background-position: center;
 }
 
 .custom-range.ui-widget.ui-widget-content {

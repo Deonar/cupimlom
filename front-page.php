@@ -346,7 +346,7 @@ get_header();
             <div class="calculator__wrap">
 
                 <div class="select-metal mb-30">
-                    <div class="hexagon mr-20" style="background-image: url(https://sdaykat.ru/wp-content/uploads/front-page-bg.jpg);">
+                    <div class="select-metal__img mr-20" style="background-image: url(https://sdaykat.ru/wp-content/uploads/front-page-bg.jpg);">
                     </div>
                     <div class="mt-auto">
                         <p class="color-gray select-metal__text">Выберите тип сырья</p>
@@ -392,6 +392,95 @@ get_header();
         </div>
     </div>
 </section>
+
+
+<section class="padding-normal">
+    <div class="container-wrapper">
+        <div class="row mb-50">
+            <div class="col-4">
+                <h2 class="primary-title">
+                    компания
+                </h2>
+            </div>
+            <div class="col-8">
+                <div class="content-wrap">
+                    <p class="mb-30">
+                        Повседневная практика показывает, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке дальнейших направлений развития. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки форм развития. Равным образом реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации систем массового участия.
+                    </p>
+                    <p class="big-text">
+                        Присутствуем в 12 регионах страны.<br>
+                        Платим честно по Лондонской<br>
+                        Бирже Металлов.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <h3 class="h3 primary-title">
+                    ключевые<br>факты
+                </h3>
+            </div>
+            <div class="col-8">
+                <div class="content-wrap">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="hexagon">
+                                <div class="hexagon__svg">
+                                    <svg width="105" height="114" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.3" d="M42.8253 3.10428C48.8202 -0.321398 56.1798 -0.321398 62.1747 3.10428L94.6747 21.6757C100.75 25.1475 104.5 31.6087 104.5 38.6065V75.3935C104.5 82.3913 100.75 88.8525 94.6747 92.3243L62.1747 110.896C56.1798 114.321 48.8202 114.321 42.8253 110.896L10.3253 92.3243C4.24958 88.8525 0.5 82.3913 0.5 75.3935V38.6064C0.5 31.6087 4.24958 25.1475 10.3253 21.6757L42.8253 3.10428Z" />
+                                    </svg>
+                                </div>
+                                <div class="hexagon__content color-red">
+                                    1 000+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="hexagon">
+                                <div class="hexagon__svg">
+                                    <svg width="105" height="114" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.3" d="M42.8253 3.10428C48.8202 -0.321398 56.1798 -0.321398 62.1747 3.10428L94.6747 21.6757C100.75 25.1475 104.5 31.6087 104.5 38.6065V75.3935C104.5 82.3913 100.75 88.8525 94.6747 92.3243L62.1747 110.896C56.1798 114.321 48.8202 114.321 42.8253 110.896L10.3253 92.3243C4.24958 88.8525 0.5 82.3913 0.5 75.3935V38.6064C0.5 31.6087 4.24958 25.1475 10.3253 21.6757L42.8253 3.10428Z" />
+                                    </svg>
+                                </div>
+                                <div class="hexagon__content color-red">
+                                    1 000+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="hexagon">
+                                <div class="hexagon__svg">
+                                    <svg width="105" height="114" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.3" d="M42.8253 3.10428C48.8202 -0.321398 56.1798 -0.321398 62.1747 3.10428L94.6747 21.6757C100.75 25.1475 104.5 31.6087 104.5 38.6065V75.3935C104.5 82.3913 100.75 88.8525 94.6747 92.3243L62.1747 110.896C56.1798 114.321 48.8202 114.321 42.8253 110.896L10.3253 92.3243C4.24958 88.8525 0.5 82.3913 0.5 75.3935V38.6064C0.5 31.6087 4.24958 25.1475 10.3253 21.6757L42.8253 3.10428Z" />
+                                    </svg>
+                                </div>
+                                <div class="hexagon__content color-red">
+                                    1 000+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="hexagon">
+                                <div class="hexagon__svg">
+                                    <svg width="105" height="114" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.3" d="M42.8253 3.10428C48.8202 -0.321398 56.1798 -0.321398 62.1747 3.10428L94.6747 21.6757C100.75 25.1475 104.5 31.6087 104.5 38.6065V75.3935C104.5 82.3913 100.75 88.8525 94.6747 92.3243L62.1747 110.896C56.1798 114.321 48.8202 114.321 42.8253 110.896L10.3253 92.3243C4.24958 88.8525 0.5 82.3913 0.5 75.3935V38.6064C0.5 31.6087 4.24958 25.1475 10.3253 21.6757L42.8253 3.10428Z" />
+                                    </svg>
+                                </div>
+                                <div class="hexagon__content color-red">
+                                    1 000+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 
 <?php get_footer();
