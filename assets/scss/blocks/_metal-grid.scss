@@ -70,6 +70,7 @@
         font-weight: bold;
         font-size: 22px;
         line-height: 30px;
+        margin-bottom: 5px;
     }
     &__text {
         font-weight: 500;
@@ -141,15 +142,6 @@
     }
 
     .grid-rectangle {
-        &__col {
-            flex: 0 0 50%;
-            max-width: 50%;
-        }
-    }
-}
-
-@media (max-width: 767px) {
-    .grid-square {
         &__col {
             flex: 0 0 50%;
             max-width: 50%;
