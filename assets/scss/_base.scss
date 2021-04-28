@@ -10,7 +10,7 @@ body {
   position: relative;
   font-family: $base-font;
   font-style: normal;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   color: $black;
@@ -146,6 +146,10 @@ body {
   color: $gray;
 }
 
+.color-red {
+  color: $accent-red;
+}
+
 .d-flex {
   display: flex;
 }
@@ -175,6 +179,9 @@ body {
   padding-top: 100px;
 }
 
+.content-wrap {
+  max-width: 765px;
+}
 //Socials
 .social {
   &__list {
@@ -260,6 +267,39 @@ body {
   &:active {
     border: 1px solid #a2a6ab;
     background: #a2a6ab;
+  }
+}
+//Hexagon
+.hexagon {
+  width: 105px;
+  height: 114px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content {
+    font-family: 'RobotoCondensed';
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  &__svg {
+    position: absolute;
+    bottom: 0;
+    width: 105px;
+    height: 114px;
+    svg {
+      width: 100%;
+      height: auto;
+      stroke: $gray;
+    }
+  }
+  &_white {
+    .hexagon__svg {
+      svg {
+        stroke: #fff;
+      }
+    }
   }
 }
 
