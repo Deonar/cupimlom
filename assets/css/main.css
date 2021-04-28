@@ -434,6 +434,7 @@ body {
 }
 
 .text-link {
+  cursor: pointer;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
@@ -445,6 +446,7 @@ body {
 }
 
 .text-link_red {
+  cursor: pointer;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
@@ -542,6 +544,10 @@ body {
 
 .mb-5 {
   margin-bottom: 5px;
+}
+
+.mr-30 {
+  margin-right: 30px;
 }
 
 .mr-20 {
@@ -827,12 +833,26 @@ body {
 }
 
 .main-form__input {
+  outline: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   position: relative;
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
   width: 100%;
-  max-width: 200px;
+  border: none;
+  line-height: 60px;
+  height: 60px;
+  padding-left: 20px;
+  background: #ffffff;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.main-form__input:focus, .main-form__input:hover, .main-form__input:active {
+  outline: none;
+  border: 1px solid #ea591a;
+  transition: all 0.3s ease;
 }
 
 .main-form__label {
@@ -843,55 +863,83 @@ body {
   line-height: 14px;
 }
 
-.main-form__label._error input {
-  border: 1px solid #d10000;
+.main-form__phone {
+  max-width: 200px;
 }
 
-.main-form__label._error .main-form__label-error {
+.main-form__input-wrapp {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.main-form__input-wrapp.error .main-form__input {
+  border: 1px solid #ea591a;
+  transition: all 0.3s ease;
+  color: #ea591a;
+}
+
+.main-form__input-wrapp.error .main-form__label-error {
   display: block;
 }
 
-.main-form__label input:focus {
-  outline: none;
+.main-form__input-wrapp.error:before {
+  content: '';
+  top: 28px;
+  right: 20px;
+  transform: rotate(45deg);
+  position: absolute;
+  height: 2px;
+  width: 15px;
+  background: #ea591a;
+  transition: 0.25s ease-in-out;
+  z-index: 10;
+}
+
+.main-form__input-wrapp.error:after {
+  content: '';
+  top: 28px;
+  right: 20px;
+  transform: rotate(-45deg);
+  position: absolute;
+  height: 2px;
+  width: 15px;
+  background: #ea591a;
+  transition: 0.25s ease-in-out;
+  z-index: 10;
+}
+
+.main-form__input-wrapp.done .main-form__input {
+  border: 1px solid #ea591a;
+  transition: all 0.3s ease;
+}
+
+.main-form__input-wrapp.done:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  right: 20px;
+  bottom: 24px;
+  width: 8px;
+  height: 13px;
+  border: solid #0e1320;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 .main-form__label-error {
   display: none;
   position: absolute;
   left: 1px;
-  bottom: 98%;
+  bottom: 0;
+  transform: translateY(105%);
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
-  color: #d10000;
-}
-
-.main-form__phone {
-  outline: none;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  position: relative;
-  width: 100%;
-  max-width: 200px;
-  border: none;
-  line-height: 60px;
-  height: 60px;
-  padding-left: 20px;
-  background: #ffffff;
-  border-radius: 3px;
-}
-
-.main-form__phone:focus, .main-form__phone:hover {
-  outline: none;
-}
-
-.main-form__text {
-  color: #fff;
-}
-
-.main-form__text a:hover {
-  text-decoration: underline;
+  color: #ea591a;
 }
 
 .main-form__policy {
@@ -927,7 +975,7 @@ body {
 
 .main-form__checkbox-box::before {
   opacity: 0;
-  content: "";
+  content: '';
   position: absolute;
   display: inline-block;
   left: 8px;
@@ -943,8 +991,59 @@ body {
   padding: 21px;
 }
 
+.main-form__radio-group .main-form__radio-input[type='radio'] {
+  display: none;
+}
+
+.main-form__radio-group .main-form__radio-label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 25px;
+  position: relative;
+  display: inline-block;
+  margin-right: 50px;
+  padding: 0px 0px 0px 30px;
+  cursor: pointer;
+}
+
+.main-form__radio-group .main-form__radio-label::before,
+.main-form__radio-group .main-form__radio-label::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  border-radius: 100%;
+  transition: all 0.2s;
+}
+
+.main-form__radio-group .main-form__radio-label::before {
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #0e1320;
+}
+
+.main-form__radio-group .main-form__radio-label::after {
+  opacity: 0;
+  left: 0px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 6px solid #0e1320;
+  transform: scale(1.5);
+}
+
+.main-form__radio-group .main-form__radio-input[type='radio']:checked + .main-form__radio-label::before {
+  border: 2px solid #0e1320;
+}
+
+.main-form__radio-group .main-form__radio-input[type='radio']:checked + .main-form__radio-label::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
 @media (max-width: 420px) {
-  .main-form__input {
+  .main-form__input-wrapp {
     max-width: 100%;
     margin-bottom: 10px;
   }
@@ -1490,10 +1589,15 @@ body {
   max-width: 640px;
 }
 
+.profile-info__block-wrapper {
+  margin-bottom: 80px;
+}
+
 .profile-info__block-head {
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
+  border-bottom: 1px solid #ebeef3;
 }
 
 .profile-info__block-row {
@@ -1510,9 +1614,67 @@ body {
 }
 
 .profile-info__block-col-2 {
+  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   color: #333;
+}
+
+.profile-form__row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.profile-form__row:last-child {
+  margin-bottom: 0;
+}
+
+.profile-form .profile-info__block-row {
+  flex-direction: column;
+}
+
+.profile-form .main-form__label {
+  min-width: 150px;
+}
+
+.profile-form .main-form__phone {
+  max-width: 100%;
+}
+
+.profile-form .main-form__input-wrapp {
+  max-width: 100%;
+  margin-right: 0;
+}
+
+.profile-form .main-form__input-wrapp._phone {
+  max-width: 250px;
+}
+
+.profile-blocks-js {
+  position: relative;
+  overflow: hidden;
+}
+
+.edit-form-js,
+.completed-form-js {
+  position: absolute;
+  top: 0;
+  left: 1000px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s, opacity 2.8s;
+}
+
+.edit-form-js.active,
+.completed-form-js.active {
+  position: relative;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+  transition: all 0.5s, opacity 0.8s;
 }
 
 .header {

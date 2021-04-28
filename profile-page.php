@@ -38,26 +38,118 @@ get_header();
           <div class="profile-tabs__content">
             <!-- TAB PROFILE -->
             <div id="profile-tab-content" class="profile-tab__content tab-content-js" data-tab="1">
-              <div class="profile-info__block">
-                <div class="profile-info__block-head">
-                  <h3 class="profile-info__block-title h3 primary-title">ПЕРСОНАЛЬНЫЕ <br>
-                    ДАНнЫЕ</h3>
-                  <a href="#" class="profile-info__block-link text-link_red">Редактировать</a>
+              <div class="profile-info__block-wrapper profile-blocks-js">
+                <div class="profile-info__block completed-form-js active">
+                  <div class="profile-info__block-head">
+                    <h3 class="profile-info__block-title h3 primary-title">ПЕРСОНАЛЬНЫЕ <br>
+                      ДАНнЫЕ</h3>
+                    <div class="profile-info__block-link text-link_red run-edit-js">Редактировать</div>
+                  </div>
+                  <div class="profile-info__block-row">
+                    <div class="profile-info__block-col-1">Ваш номер</div>
+                    <div class="profile-info__block-col-2">+ 7 999 999-22-11</div>
+                  </div>
+                  <div class="profile-info__block-row">
+                    <div class="profile-info__block-col-1">Тип профиля</div>
+                    <div class="profile-info__block-col-2">Физ. лицо</div>
+                  </div>
+                  <div class="profile-info__block-row">
+                    <div class="profile-info__block-col-1">ФИО</div>
+                    <div class="profile-info__block-col-2">Алексеев Алексей Алексеевич</div>
+                  </div>
                 </div>
-                <div class="profile-info__block-row">
-                  <div class="profile-info__block-col-1">Ваш номер</div>
-                  <div class="profile-info__block-col-2">+ 7 999 999-22-11</div>
-                </div>
-                <div class="profile-info__block-row">
-                  <div class="profile-info__block-col-1">Тип профиля</div>
-                  <div class="profile-info__block-col-2">Физ. лицо</div>
-                </div>
-                <div class="profile-info__block-row">
-                  <div class="profile-info__block-col-1">ФИО</div>
-                  <div class="profile-info__block-col-2">Алексеев Алексей Алексеевич</div>
-                </div>
+                <form class="profile-info__block-form profile-form edit-form-js">
+                  <div class="profile-info__block-head">
+                    <h3 class="profile-info__block-title h3 primary-title">ПЕРСОНАЛЬНЫЕ <br>
+                      ДАНнЫЕ</h3>
+                  </div>
+                  <div class="profile-info__block-row">
+                    <div class="profile-form__row">
+                      <span class="main-form__label">Ваш номер</span>
+                      <div class="main-form__input-wrapp _phone error">
+                        <input value="" class="main-form__input main-form__phone mask-phone" type="tel" name="phone" id="client-phone" placeholder="+7 (___) ___-__-__" maxlength="16">
+                        <span class="main-form__label-error">Ошибка в номере</span>
+                      </div>
+                    </div>
+                    <div class="profile-form__row">
+                      <span class="main-form__label">Тип профиля</span>
+                      <div class="main-form__radio-group d-flex">
+                        <input class="main-form__radio-input" type="radio" id="form-phys-face" name="type-employment" checked />
+                        <label class="main-form__radio-label" for="form-phys-face">Физ. лицо</label>
+                        <input class="main-form__radio-input" type="radio" id="forms-your-face" name="type-employment" />
+                        <label class="main-form__radio-label" for="forms-your-face">Юр. лицо</label>
+                      </div>
+                    </div>
+                    <div class="profile-form__row">
+                      <span class="main-form__label">ФИО</span>
+                      <div class="main-form__input-wrapp done">
+                        <input class="main-form__input" type="text" name="client-name" id="client-name" placeholder="Алексеев Алексей Алексеевич" maxlength="50">
+                        <span class="main-form__label-error">Ошибка в имени</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-form__btns d-flex align-items-center mt-30">
+                    <button type="button" class="btn btn_dark mr-30 save-edit-js">Сохранить</button>
+                    <div class="text-link_red save-edit-js">Отменить</div>
+                  </div>
+                </form>
               </div>
-
+              <div class="profile-info__block-wrapper profile-blocks-js">
+                <div class="profile-info__block completed-form-js active">
+                  <div class="profile-info__block-head">
+                    <h3 class="profile-info__block-title h3 primary-title">ПЕРСОНАЛЬНЫЕ <br>
+                      ДАНнЫЕ</h3>
+                    <div class="profile-info__block-link text-link_red run-edit-js">Редактировать</div>
+                  </div>
+                  <div class="profile-info__block-row">
+                    <div class="profile-info__block-col-1">Ваш номер</div>
+                    <div class="profile-info__block-col-2">+ 7 999 999-22-11</div>
+                  </div>
+                  <div class="profile-info__block-row">
+                    <div class="profile-info__block-col-1">Тип профиля</div>
+                    <div class="profile-info__block-col-2">Физ. лицо</div>
+                  </div>
+                  <div class="profile-info__block-row">
+                    <div class="profile-info__block-col-1">ФИО</div>
+                    <div class="profile-info__block-col-2">Алексеев Алексей Алексеевич</div>
+                  </div>
+                </div>
+                <form class="profile-info__block-form profile-form edit-form-js">
+                  <div class="profile-info__block-head">
+                    <h3 class="profile-info__block-title h3 primary-title">ПЕРСОНАЛЬНЫЕ <br>
+                      ДАНнЫЕ</h3>
+                  </div>
+                  <div class="profile-info__block-row">
+                    <div class="profile-form__row">
+                      <span class="main-form__label">Ваш номер</span>
+                      <div class="main-form__input-wrapp _phone error">
+                        <input value="" class="main-form__input main-form__phone mask-phone" type="tel" name="phone" id="client-phone" placeholder="+7 (___) ___-__-__" maxlength="16">
+                        <span class="main-form__label-error">Ошибка в номере</span>
+                      </div>
+                    </div>
+                    <div class="profile-form__row">
+                      <span class="main-form__label">Тип профиля</span>
+                      <div class="main-form__radio-group d-flex">
+                        <input class="main-form__radio-input" type="radio" id="form-phys-face" name="type-employment" checked />
+                        <label class="main-form__radio-label" for="form-phys-face">Физ. лицо</label>
+                        <input class="main-form__radio-input" type="radio" id="forms-your-face" name="type-employment" />
+                        <label class="main-form__radio-label" for="forms-your-face">Юр. лицо</label>
+                      </div>
+                    </div>
+                    <div class="profile-form__row">
+                      <span class="main-form__label">ФИО</span>
+                      <div class="main-form__input-wrapp done">
+                        <input class="main-form__input" type="text" name="client-name" id="client-name" placeholder="Алексеев Алексей Алексеевич" maxlength="50">
+                        <span class="main-form__label-error">Ошибка в имени</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-form__btns d-flex align-items-center mt-30">
+                    <button type="button" class="btn btn_dark mr-30 save-edit-js">Сохранить</button>
+                    <div class="text-link_red save-edit-js">Отменить</div>
+                  </div>
+                </form>
+              </div>
             </div>
             <!-- TAB PROFILE END-->
             <!-- TAB transactions-->

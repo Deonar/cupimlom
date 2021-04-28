@@ -29,6 +29,7 @@ body {
   overflow: hidden !important;
 }
 .text-link {
+  cursor: pointer;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
@@ -38,6 +39,7 @@ body {
   }
 }
 .text-link_red {
+  cursor: pointer;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
@@ -116,6 +118,9 @@ body {
 }
 .mb-5 {
   margin-bottom: 5px;
+}
+.mr-30 {
+  margin-right: 30px;
 }
 .mr-20 {
   margin-right: 20px;

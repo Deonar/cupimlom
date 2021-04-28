@@ -60,4 +60,18 @@ jQuery(document).ready(function ($) {
       .show();
   });
   //======================== tabs  end
+
+  //======================== profile edit form
+  //show edit block form
+  $('.profile-blocks-js').on('click', '.run-edit-js', function (event) {
+    $(this).closest('.profile-blocks-js').find('.completed-form-js').removeClass('active');
+    $(this).closest('.profile-blocks-js').find('.edit-form-js').addClass('active');
+  });
+  //hide edit block form
+  $('.profile-blocks-js').on('click', '.save-edit-js', function (event) {
+    $(this).closest('.profile-blocks-js').find('.completed-form-js').addClass('active');
+    $(this).closest('.profile-blocks-js').find('.edit-form-js').removeClass('active');
+  });
+
+  //========================  profile edit form end
 });
