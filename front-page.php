@@ -394,7 +394,7 @@ get_header();
 </section>
 
 
-<section class="padding-normal padding-double-bottom">
+<section class="padding-normal">
     <div class="container-wrapper">
         <div class="row mb-50">
             <div class="col-12 col-md-4">
@@ -499,7 +499,7 @@ get_header();
 
 <section class="cabitet-block">
     <div class="container-wrapper">
-        <div class="row mb-50">
+        <div class="row">
             <div class="col-12 col-md-4">
                 <h2 class="primary-title color-white mb-50">
                     кабинет<br> партнера*
@@ -516,7 +516,7 @@ get_header();
                             </p>
                             <a href="#" class="btn btn_dark">Перейти в кабинет</a>
                         </div>
-                        <div class="col-6 col-sm-3">
+                        <div class="col-6 col-sm-3 mb-50">
                             <div class="hexagon hexagon_white mb-15">
                                 <div class="hexagon__svg">
                                     <svg width="105" height="114" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -532,7 +532,7 @@ get_header();
                                 по весу
                             </p>
                         </div>
-                        <div class="col-6 col-sm-3">
+                        <div class="col-6 col-sm-3 mb-50">
                             <div class="hexagon hexagon_white mb-15">
                                 <div class="hexagon__svg">
                                     <svg width="105" height="114" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -558,6 +558,91 @@ get_header();
     </div>
 </section>
 
+<section class="padding-normal padding-double-top">
+    <div class="container-wrapper">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-20">
+                <h2 class="primary-title">
+                    популярные<br>статьи
+                </h2>
+            </div>
+            <div class="col-12 col-md-6 col-lg-8 mb-50">
+                <a href="#" class="text-link text-link_red">Все статьи</a>
+            </div>
+        </div>
 
+        <div class="row article">
+            <a href="/single-article.php" class="col-12 col-md-6 col-lg-4 article__item">
+                <div class="article__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/metal/popular.jpg" class="img-responsive" alt="Каталитические системы">
+                </div>
+                <div class="article__description">
+                    <div class="d-flex align-items-center justify-content-between mb-20">
+                        <div class="article-tag">
+                            <span class="article-tag__item">
+                                металлы
+                            </span>
+                            <span class="article-tag__item">
+                                new
+                            </span>
+                        </div>
+                        <div class="article__meta">
+                            <span class="article__time"><img class="mr-10" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/time.svg" alt="">2 мин</span>
+                            <span class="article__views"><img class="mr-10" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/views.svg" alt="">500</span>
+                        </div>
+                    </div>
+                    <h4 class="article__title">Сколько стоит старый катализатор?</h4>
+                    <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
+                </div>
+            </a>
+            <a href="/single-article.php" class="col-12 col-md-6 col-lg-4 article__item">
+                <div class="article__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/metal/popular.jpg" class="img-responsive" alt="Каталитические системы">
+                </div>
+                <div class="article__description">
+                    <div class="d-flex align-items-center justify-content-between mb-20">
+                        <div class="article-tag">
+                            <span class="article-tag__item">
+                                металлы
+                            </span>
+                            <span class="article-tag__item">
+                                new
+                            </span>
+                        </div>
+                        <div class="article__meta">
+                            <span class="article__time"><img class="mr-10" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/time.svg" alt="">2 мин</span>
+                            <span class="article__views"><img class="mr-10" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/views.svg" alt="">500</span>
+                        </div>
+                    </div>
+                    <h4 class="article__title">Сколько стоит старый катализатор?</h4>
+                    <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
+                </div>
+            </a>
+            <a href="/single-article.php" class="col-12 col-md-6 col-lg-4 article__item d-none d-lg-block">
+                <div class="article__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/metal/popular.jpg" class="img-responsive" alt="Каталитические системы">
+                </div>
+                <div class="article__description">
+                    <div class="d-flex align-items-center justify-content-between mb-20">
+                        <div class="article-tag">
+                            <span class="article-tag__item">
+                                металлы
+                            </span>
+                            <span class="article-tag__item">
+                                new
+                            </span>
+                        </div>
+                        <div class="article__meta">
+                            <span class="article__time"><img class="mr-10" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/time.svg" alt="">2 мин</span>
+                            <span class="article__views"><img class="mr-10" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/views.svg" alt="">500</span>
+                        </div>
+                    </div>
+                    <h4 class="article__title">Сколько стоит старый катализатор?</h4>
+                    <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
 
 <?php get_footer();

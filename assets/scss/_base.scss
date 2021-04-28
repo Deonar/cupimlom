@@ -17,6 +17,14 @@ body {
 
   // background-color: #c6c6c6;
 }
+
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
 .text-center {
   text-align: center;
 }
@@ -117,7 +125,6 @@ body {
   margin-right: 10px;
 }
 
-
 .mw-110{
   max-width: 110px;
 }
@@ -147,28 +154,6 @@ body {
 
 .color-red {
   color: $accent-red;
-}
-
-.d-flex {
-  display: flex;
-}
-.flex-wrap {
-  flex-wrap: wrap;
-}
-.align-items-center {
-  align-items: center;
-}
-.justify-content-center {
-  justify-content: center;
-}
-.flex-direction-column {
-  flex-direction: column;
-}
-
-.container-wrapper {
-  position: relative;
-  padding-left: 70px;
-  padding-right: 70px;
 }
 
 .content-wrap{

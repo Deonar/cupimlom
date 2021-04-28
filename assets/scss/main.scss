@@ -6,9 +6,11 @@
 @import 'base';
 
 //Components
+@import 'components/custom-grid';
 @import 'components/forms';
 
 //Blocks
+@import 'blocks/article';
 @import 'blocks/cabinet-block';
 @import 'blocks/calculator';
 @import 'blocks/metal-grid';
