@@ -401,6 +401,10 @@ button {
   font-size: 14px;
 }
 
+.fz-12 {
+  font-size: 12px;
+}
+
 *,
 *::before,
 *::after {
@@ -562,6 +566,10 @@ body {
   margin-right: 10px;
 }
 
+.mw-110 {
+  max-width: 110px;
+}
+
 .padding-normal {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -569,6 +577,10 @@ body {
 
 .padding-double-top {
   padding-top: 80px;
+}
+
+.padding-double-bottom {
+  padding-bottom: 80px;
 }
 
 .color-white {
@@ -720,8 +732,18 @@ body {
   height: 114px;
   position: relative;
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+>>>>>>> 783ce7faaae58f7f3f15a8aeb8cc4882c4e79089
 }
 
 .hexagon__content {
@@ -1059,6 +1081,14 @@ body {
     width: 100%;
     max-width: 100%;
   }
+}
+
+.cabitet-block {
+  padding: 50px 0;
+  background-image: url(../img/bg/cabinet-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .calculator {

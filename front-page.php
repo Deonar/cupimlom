@@ -413,15 +413,15 @@ get_header();
 </section>
 
 
-<section class="padding-normal">
+<section class="padding-normal padding-double-bottom">
   <div class="container-wrapper">
     <div class="row mb-50">
-      <div class="col-4">
-        <h2 class="primary-title">
+      <div class="col-12 col-md-4">
+        <h2 class="primary-title mb-50">
           компания
         </h2>
       </div>
-      <div class="col-8">
+      <div class="col-12 offset-sm-3 offset-md-0 col-sm-9 col-md-8">
         <div class="content-wrap">
           <p class="mb-30">
             Повседневная практика показывает, что дальнейшее развитие различных форм деятельности позволяет выполнять
@@ -436,77 +436,164 @@ get_header();
             Бирже Металлов.
           </p>
         </div>
+        <div class="hexagon__content color-red">
+          1 000+
+        </div>
       </div>
     </div>
+  </div>
 
-    <div class="row">
-      <div class="col-4">
-        <h3 class="h3 primary-title">
-          ключевые<br>факты
-        </h3>
-      </div>
-      <div class="col-8">
-        <div class="content-wrap">
-          <div class="row">
-            <div class="col-3">
-              <div class="hexagon">
-                <div class="hexagon__svg">
-                  <svg width="105" height="114" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3"
-                      d="M42.8253 3.10428C48.8202 -0.321398 56.1798 -0.321398 62.1747 3.10428L94.6747 21.6757C100.75 25.1475 104.5 31.6087 104.5 38.6065V75.3935C104.5 82.3913 100.75 88.8525 94.6747 92.3243L62.1747 110.896C56.1798 114.321 48.8202 114.321 42.8253 110.896L10.3253 92.3243C4.24958 88.8525 0.5 82.3913 0.5 75.3935V38.6064C0.5 31.6087 4.24958 25.1475 10.3253 21.6757L42.8253 3.10428Z" />
-                  </svg>
-                </div>
-                <div class="hexagon__content color-red">
-                  1 000+
-                </div>
+  <div class="row">
+    <div class="col-12 col-sm-3 col-md-4">
+      <h3 class="h3 primary-title mb-30">
+        ключевые<br>факты
+      </h3>
+    </div>
+    <div class="col-12 col-sm-9 col-md-8">
+      <div class="content-wrap">
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-3 mb-40">
+            <div class="hexagon mb-15">
+              <div class="hexagon__svg">
+                <svg width="105" height="114" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3"
+                    d="M42.8253 3.10428C48.8202 -0.321398 56.1798 -0.321398 62.1747 3.10428L94.6747 21.6757C100.75 25.1475 104.5 31.6087 104.5 38.6065V75.3935C104.5 82.3913 100.75 88.8525 94.6747 92.3243L62.1747 110.896C56.1798 114.321 48.8202 114.321 42.8253 110.896L10.3253 92.3243C4.24958 88.8525 0.5 82.3913 0.5 75.3935V38.6064C0.5 31.6087 4.24958 25.1475 10.3253 21.6757L42.8253 3.10428Z" />
+                </svg>
+              </div>
+              <div class="hexagon__content color-red">
+                1 000+
               </div>
             </div>
-            <div class="col-3">
-              <div class="hexagon">
-                <div class="hexagon__svg">
-                  <svg width="105" height="114" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3"
-                      d="M42.8253 3.10428C48.8202 -0.321398 56.1798 -0.321398 62.1747 3.10428L94.6747 21.6757C100.75 25.1475 104.5 31.6087 104.5 38.6065V75.3935C104.5 82.3913 100.75 88.8525 94.6747 92.3243L62.1747 110.896C56.1798 114.321 48.8202 114.321 42.8253 110.896L10.3253 92.3243C4.24958 88.8525 0.5 82.3913 0.5 75.3935V38.6064C0.5 31.6087 4.24958 25.1475 10.3253 21.6757L42.8253 3.10428Z" />
-                  </svg>
-                </div>
-                <div class="hexagon__content color-red">
-                  1 000+
-                </div>
+            <p class="mw-110 small-text color-gray">
+              тонн собираем<br>
+              в год
+            </p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 mb-40">
+            <div class="hexagon mb-15">
+              <div class="hexagon__svg">
+                <svg width="105" height="114" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3"
+                    d="M42.8253 3.10428C48.8202 -0.321398 56.1798 -0.321398 62.1747 3.10428L94.6747 21.6757C100.75 25.1475 104.5 31.6087 104.5 38.6065V75.3935C104.5 82.3913 100.75 88.8525 94.6747 92.3243L62.1747 110.896C56.1798 114.321 48.8202 114.321 42.8253 110.896L10.3253 92.3243C4.24958 88.8525 0.5 82.3913 0.5 75.3935V38.6064C0.5 31.6087 4.24958 25.1475 10.3253 21.6757L42.8253 3.10428Z" />
+                </svg>
+              </div>
+              <div class="hexagon__content color-red">
+                5
               </div>
             </div>
-            <div class="col-3">
-              <div class="hexagon">
-                <div class="hexagon__svg">
-                  <svg width="105" height="114" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3"
-                      d="M42.8253 3.10428C48.8202 -0.321398 56.1798 -0.321398 62.1747 3.10428L94.6747 21.6757C100.75 25.1475 104.5 31.6087 104.5 38.6065V75.3935C104.5 82.3913 100.75 88.8525 94.6747 92.3243L62.1747 110.896C56.1798 114.321 48.8202 114.321 42.8253 110.896L10.3253 92.3243C4.24958 88.8525 0.5 82.3913 0.5 75.3935V38.6064C0.5 31.6087 4.24958 25.1475 10.3253 21.6757L42.8253 3.10428Z" />
-                  </svg>
-                </div>
-                <div class="hexagon__content color-red">
-                  1 000+
-                </div>
+            <p class="mw-110 small-text color-gray">
+              тонн собираем<br>
+              в год
+            </p>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 mb-40">
+            <div class="hexagon mb-15">
+              <div class="hexagon__svg">
+                <svg width="105" height="114" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3"
+                    d="M42.8253 3.10428C48.8202 -0.321398 56.1798 -0.321398 62.1747 3.10428L94.6747 21.6757C100.75 25.1475 104.5 31.6087 104.5 38.6065V75.3935C104.5 82.3913 100.75 88.8525 94.6747 92.3243L62.1747 110.896C56.1798 114.321 48.8202 114.321 42.8253 110.896L10.3253 92.3243C4.24958 88.8525 0.5 82.3913 0.5 75.3935V38.6064C0.5 31.6087 4.24958 25.1475 10.3253 21.6757L42.8253 3.10428Z" />
+                </svg>
+              </div>
+              <div class="hexagon__content color-red">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/weight.svg" alt="">
               </div>
             </div>
-            <div class="col-3">
-              <div class="hexagon">
-                <div class="hexagon__svg">
-                  <svg width="105" height="114" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3"
-                      d="M42.8253 3.10428C48.8202 -0.321398 56.1798 -0.321398 62.1747 3.10428L94.6747 21.6757C100.75 25.1475 104.5 31.6087 104.5 38.6065V75.3935C104.5 82.3913 100.75 88.8525 94.6747 92.3243L62.1747 110.896C56.1798 114.321 48.8202 114.321 42.8253 110.896L10.3253 92.3243C4.24958 88.8525 0.5 82.3913 0.5 75.3935V38.6064C0.5 31.6087 4.24958 25.1475 10.3253 21.6757L42.8253 3.10428Z" />
-                  </svg>
-                </div>
-                <div class="hexagon__content color-red">
-                  1 000+
-                </div>
+            <p class="mw-110 small-text color-gray">
+              точный расчет<br>
+              по весу
+            </p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 mb-40">
+            <div class="hexagon mb-15">
+              <div class="hexagon__svg">
+                <svg width="105" height="114" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3"
+                    d="M42.8253 3.10428C48.8202 -0.321398 56.1798 -0.321398 62.1747 3.10428L94.6747 21.6757C100.75 25.1475 104.5 31.6087 104.5 38.6065V75.3935C104.5 82.3913 100.75 88.8525 94.6747 92.3243L62.1747 110.896C56.1798 114.321 48.8202 114.321 42.8253 110.896L10.3253 92.3243C4.24958 88.8525 0.5 82.3913 0.5 75.3935V38.6064C0.5 31.6087 4.24958 25.1475 10.3253 21.6757L42.8253 3.10428Z" />
+                </svg>
+              </div>
+              <div class="hexagon__content color-red">
+                1 000+
               </div>
             </div>
+            <p class="mw-110 small-text color-gray">
+              оплата на карту
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
 </section>
 
+
+<section class="cabitet-block">
+  <div class="container-wrapper">
+    <div class="row mb-50">
+      <div class="col-12 col-md-4">
+        <h2 class="primary-title color-white mb-50">
+          кабинет<br> партнера*
+        </h2>
+      </div>
+      <div class="col-12 col-md-8">
+        <div class="content-wrap">
+          <div class="row">
+            <div class="col-12 col-sm-6 mb-50">
+              <p class="color-white mb-30">
+                Войдите в кабинет, чтобы получить<br>
+                больше преимуществ от выгодного<br>
+                сотрудничества
+              </p>
+              <a href="#" class="btn btn_dark">Перейти в кабинет</a>
+            </div>
+            <div class="col-6 col-sm-3">
+              <div class="hexagon hexagon_white mb-15">
+                <div class="hexagon__svg">
+                  <svg width="105" height="114" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3"
+                      d="M42.8253 3.10428C48.8202 -0.321398 56.1798 -0.321398 62.1747 3.10428L94.6747 21.6757C100.75 25.1475 104.5 31.6087 104.5 38.6065V75.3935C104.5 82.3913 100.75 88.8525 94.6747 92.3243L62.1747 110.896C56.1798 114.321 48.8202 114.321 42.8253 110.896L10.3253 92.3243C4.24958 88.8525 0.5 82.3913 0.5 75.3935V38.6064C0.5 31.6087 4.24958 25.1475 10.3253 21.6757L42.8253 3.10428Z" />
+                  </svg>
+                </div>
+                <div class="hexagon__content color-white">
+                  1 000+
+                </div>
+              </div>
+              <p class="mw-110 small-text color-white">
+                точный расчет<br>
+                по весу
+              </p>
+            </div>
+            <div class="col-6 col-sm-3">
+              <div class="hexagon hexagon_white mb-15">
+                <div class="hexagon__svg">
+                  <svg width="105" height="114" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3"
+                      d="M42.8253 3.10428C48.8202 -0.321398 56.1798 -0.321398 62.1747 3.10428L94.6747 21.6757C100.75 25.1475 104.5 31.6087 104.5 38.6065V75.3935C104.5 82.3913 100.75 88.8525 94.6747 92.3243L62.1747 110.896C56.1798 114.321 48.8202 114.321 42.8253 110.896L10.3253 92.3243C4.24958 88.8525 0.5 82.3913 0.5 75.3935V38.6064C0.5 31.6087 4.24958 25.1475 10.3253 21.6757L42.8253 3.10428Z" />
+                  </svg>
+                </div>
+                <div class="hexagon__content color-white">
+                  1 000+
+                </div>
+              </div>
+              <p class="mw-110 small-text color-white">
+                оплата на карту
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="fz-12 color-white">
+      *Кабинет партнера создается<br>
+      автоматически после первой сделки
+    </p>
+  </div>
+</section>
 
 
 

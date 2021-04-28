@@ -132,6 +132,11 @@ body {
   margin-right: 10px;
 }
 
+
+.mw-110{
+  max-width: 110px;
+}
+
 // Padding
 .padding-normal {
   padding-top: 40px;
@@ -140,6 +145,10 @@ body {
 
 .padding-double-top {
   padding-top: 80px;
+}
+
+.padding-double-bottom {
+  padding-bottom: 80px;
 }
 
 // Color
@@ -282,6 +291,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
   &__content {
     font-family: 'RobotoCondensed';
     font-weight: bold;
