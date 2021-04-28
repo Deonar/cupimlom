@@ -34,7 +34,7 @@ get_header();
         <label class="main-form__policy">
           <input type="checkbox" checked="" id="check" class="main-form__checkbox">
           <span class="main-form__checkbox-box"></span>
-          <span class="main-form__text small-text"> Я ознакомлен c <a class="text-link"
+          <span class="main-form__text small-text color-white"> Я ознакомлен c <a class="text-link"
               href="https://sdaykat.ru/confidencial">политикой конфиденциальности</a></span>
         </label>
       </form>

@@ -25,7 +25,7 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
-  <header id="header" class="header">
+  <header id="header" class="header <?php echo (is_front_page()) ? "header_white" : "" ?>">
     <div class="header__wrapp">
       <?php
 			if (is_front_page() && is_home()) :
