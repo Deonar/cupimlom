@@ -33,8 +33,18 @@ body {
   font-size: 14px;
   line-height: 17px;
   text-decoration: underline;
-  &:hover{
+  &:hover {
     color: $accent-red;
+  }
+}
+.text-link_red {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: underline;
+  color: $accent-red;
+  &:hover {
+    color: $black;
   }
 }
 .h-100p {
@@ -118,21 +128,21 @@ body {
 }
 
 // Padding
-.padding-normal{
+.padding-normal {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.padding-double-top{
+.padding-double-top {
   padding-top: 80px;
 }
 
 // Color
-.color-white{
+.color-white {
   color: #fff;
 }
 
-.color-gray{
+.color-gray {
   color: $gray;
 }
 
@@ -148,29 +158,36 @@ body {
 .justify-content-center {
   justify-content: center;
 }
+.justify-content-between {
+  justify-content: space-between;
+}
 .flex-direction-column {
   flex-direction: column;
 }
 
-.container-wrapper{
+.container-wrapper {
   position: relative;
   padding-left: 70px;
   padding-right: 70px;
 }
 
+.page-wrapper {
+  padding-top: 100px;
+}
+
 //Socials
-.social{
-  &__list{
+.social {
+  &__list {
     display: flex;
     align-items: center;
   }
-  &__item{
+  &__item {
     margin-right: 10px;
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
   }
-  &__link{
+  &__link {
     border: 1px solid #ffffff1a;
     width: 60px;
     height: 60px;
@@ -180,8 +197,8 @@ body {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    &:hover{
-      svg{
+    &:hover {
+      svg {
         fill: $accent-red;
       }
     }
@@ -225,13 +242,26 @@ body {
 .btn_accent {
   background: $accent-red;
   &:hover {
-    background: #E14604;
+    background: #e14604;
   }
   &:active {
     background: $accent-red;
   }
 }
 
+.btn_light_border {
+  padding: 15px 20px;
+  border: 1px solid #a2a6ab;
+  background: #fff;
+  color: $black;
+  &:hover {
+    border: 1px solid $black;
+  }
+  &:active {
+    border: 1px solid #a2a6ab;
+    background: #a2a6ab;
+  }
+}
 
 //Custom select
 .selectize-input {
@@ -245,11 +275,11 @@ body {
   width: 180px;
   cursor: pointer;
   &.full {
-      background-color: transparent;
-      box-shadow: none;
+    background-color: transparent;
+    box-shadow: none;
   }
-  input{
-      display: none!important;
+  input {
+    display: none !important;
   }
 }
 
@@ -278,7 +308,7 @@ body {
   border-width: 0 5px 6px 5px;
   border-color: transparent transparent $black transparent;
 }
-.selectize-input.dropdown-active::before{
+.selectize-input.dropdown-active::before {
   display: none;
 }
 .selectize-dropdown {
@@ -288,17 +318,17 @@ body {
   border-radius: 5px;
   overflow: hidden;
   .option {
-      cursor: pointer;
-      color: $gray;
-      padding: 5px 10px;
-      &:first-child{
-          padding-top: 10px;
-      }
-      &:last-child{
-          padding-bottom: 10px;
-      }
-      &:hover{
-          color: $accent-red;
-      }
+    cursor: pointer;
+    color: $gray;
+    padding: 5px 10px;
+    &:first-child {
+      padding-top: 10px;
+    }
+    &:last-child {
+      padding-bottom: 10px;
+    }
+    &:hover {
+      color: $accent-red;
+    }
   }
 }
