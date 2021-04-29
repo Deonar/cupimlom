@@ -18,7 +18,7 @@ body {
   // background-color: #c6c6c6;
 }
 
-.img-responsive{
+.img-responsive {
   display: block;
   max-width: 100%;
   height: auto;
@@ -140,7 +140,7 @@ body {
   margin-right: 10px;
 }
 
-.mw-110{
+.mw-110 {
   max-width: 110px;
 }
 
@@ -392,5 +392,203 @@ body {
     &:hover {
       color: $accent-red;
     }
+  }
+}
+
+//Accordeon
+.accordeon {
+  &-wrapper {
+    &.active .accordeon-tab:after {
+      transform: translateY(-70%) rotate(-225deg);
+      transition: all 0.3s ease;
+    }
+  }
+  &-tab {
+    padding: 20px 12px;
+    border-radius: 3px 3px 0 0;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-70%) rotate(-45deg);
+      border-bottom: 2px solid $black;
+      border-left: 2px solid $black;
+      transition: all 0.3s ease;
+    }
+  }
+  &-content {
+    display: none;
+  }
+}
+
+.transactions {
+  &-head {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-sort__daterange {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    .daterange-input {
+      border-radius: 3px;
+      border: none;
+      outline: none;
+      min-width: 170px;
+      padding: 6px 0;
+      background: #f4f7fa;
+      color: $accent-red;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      text-decoration: underline;
+      cursor: pointer;
+      text-align: center;
+      &__label {
+        cursor: pointer;
+        margin-right: 10px;
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+      &::placeholder {
+        text-align: center;
+      }
+    }
+    &:hover .daterange-input {
+      text-decoration: none;
+    }
+  }
+}
+
+//====== simple select
+.select {
+  position: relative;
+  &__label {
+    display: block;
+    font-weight: 700;
+    color: $accent-red;
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  &__header {
+    display: flex;
+
+    &:hover .select__label {
+      text-decoration: underline;
+    }
+  }
+  &__current {
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: $black;
+    &::after {
+      content: '';
+      display: inline-block;
+      position: relative;
+      top: 3px;
+      border: 5px solid transparent;
+      border-top: 5px solid $black;
+      margin-left: 5px;
+      transition: all 0.3s ease;
+    }
+  }
+  &__arrow {
+    position: relative;
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 3px;
+      width: 20px;
+      height: 12px;
+      right: 10px;
+      // background: url('../img/icons/select-arrow.svg') center center no-repeat;
+      background-size: 70%;
+      transition: all 0.3s ease;
+    }
+  }
+  &__body {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    min-width: 210px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    background: #fff;
+    padding: 10px 10px 10px 10px;
+    margin-top: 2px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
+  &__item-search {
+    padding: 5px 0;
+    margin-right: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:hover {
+      transition: all 0.3s ease;
+      color: $black;
+    }
+  }
+  &__item {
+    opacity: 0.7;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+  }
+
+  &.is-active {
+    .select__body {
+      top: 100%;
+      left: 0;
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.3s ease;
+      z-index: 100;
+    }
+    .select__current::after {
+      transform: translateY(-5px) rotate(180deg);
+      transition: all 0.3s ease;
+    }
+    .select__arrow::after {
+      transform: rotate(180deg);
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .page-wrapper {
+    padding-top: 85px;
   }
 }

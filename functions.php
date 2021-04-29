@@ -55,6 +55,7 @@ add_action( 'after_setup_theme', 'cupimlom_setup' );
  */
 function cupimlom_scripts() {
 	// Styles
+	wp_enqueue_style('daterangepicker', get_template_directory_uri() . '/assets/libs/daterangepicker/daterangepicker.css', array(), _S_VERSION);
 	wp_enqueue_style('bootstrap-grid', get_template_directory_uri() . '/assets/libs/bootstrap-grid/bootstrap-grid.min.css', array(), _S_VERSION);
 	wp_enqueue_style('magnific-popup', get_template_directory_uri() . '/assets/libs/magnific-popup/magnific-popup.css', array(), _S_VERSION);
 	wp_enqueue_style('selectize', get_template_directory_uri() . '/assets/libs/selectize/css/selectize.css', array(), _S_VERSION);
@@ -65,6 +66,8 @@ function cupimlom_scripts() {
 
 
 	// Scripts
+	wp_enqueue_script('momentjs', get_template_directory_uri() . '/assets/libs/momentjs/moment.min.js', array('jquery'), _S_VERSION);
+	wp_enqueue_script('daterangepicker', get_template_directory_uri() . '/assets/libs/daterangepicker/daterangepicker.js', array('jquery'), _S_VERSION);
 	wp_enqueue_script('selectize', get_template_directory_uri() . '/assets/libs/selectize/js/selectize.min.js', array('jquery'), _S_VERSION);
 	wp_enqueue_script('scrollbar', get_template_directory_uri() . '/assets/libs/scrollbar/jquery.scrollbar.min.js', array('jquery'), _S_VERSION);
 	wp_enqueue_script('jquery.mask', get_template_directory_uri() . '/assets/libs/jquery-mask/jquery.mask.min.js', array('jquery'), _S_VERSION, true);
@@ -79,4 +82,3 @@ add_action( 'wp_enqueue_scripts', 'cupimlom_scripts' );
  * 
  */
 // require get_template_directory() . '/inc/custom-header.php';
-

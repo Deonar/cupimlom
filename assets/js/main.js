@@ -72,6 +72,94 @@ jQuery(document).ready(function ($) {
     $(this).closest('.profile-blocks-js').find('.completed-form-js').addClass('active');
     $(this).closest('.profile-blocks-js').find('.edit-form-js').removeClass('active');
   });
-
   //========================  profile edit form end
+
+  //accordeon
+  $('.accordeon-tab-js').click(function (event) {
+    event.stopPropagation();
+    if ($(this).closest('.accordeon-wrapper-js').hasClass('active')) {
+      $(this).closest('.accordeon-wrapper-js').removeClass('active');
+      $(this).closest('.accordeon-wrapper-js').find('.accordeon-content-js').slideUp(300);
+    } else {
+      // $('.accordeon-wrapper-js').removeClass('active');
+      // $('.accordeon-content-js').slideUp(300);
+      $(this).closest('.accordeon-wrapper-js').toggleClass('active');
+      $(this).closest('.accordeon-wrapper-js').find('.accordeon-content-js').slideDown(300);
+    }
+  });
+  //accordeon end
+
+  //======================== daterangepicker profile
+  // predefined ranges
+  var start = moment().subtract(29, 'days');
+  var end = moment();
+
+  $('.daterange-input').daterangepicker(
+    {
+      locale: {
+        format: 'MM/DD/YYYY',
+        separator: ' - ',
+        applyLabel: 'Выбрать',
+        cancelLabel: 'Отмена',
+        fromLabel: 'От',
+        toLabel: 'До',
+        customRangeLabel: 'Своя дата',
+        daysOfWeek: ['Вс', 'Пт', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+        monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+        firstDay: 1,
+      },
+      startDate: start,
+      endDate: end,
+      ranges: {
+        Cегодня: [moment(), moment()],
+        Вчера: [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+        'За 7 дней': [moment().subtract(6, 'days'), moment()],
+        'За 30 дней': [moment().subtract(29, 'days'), moment()],
+        'За месяц': [moment().startOf('month'), moment().endOf('month')],
+        'За прошлый месяц': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')],
+      },
+    },
+    function (start, end, label) {
+      $('#kt_daterangepicker_6 .form-control').val(start.format('MM/DD/YYYY') + ' / ' + end.format('MM/DD/YYYY'));
+    }
+  );
+
+  if (document.documentElement.clientWidth < 420) {
+    $('.daterange-input').attr('readonly', 'readonly');
+  }
+  //======================== daterangepicker profile end
+
+  //======================== ALL SELECT
+  let select = function () {
+    let selectHeader = document.querySelectorAll('.select__header');
+    let selectItem = document.querySelectorAll('.select__item');
+
+    selectHeader.forEach((item) => {
+      item.addEventListener('click', selectToggle);
+    });
+
+    selectItem.forEach((item) => {
+      item.addEventListener('click', selectChoose);
+    });
+
+    function selectToggle() {
+      this.parentElement.classList.toggle('is-active');
+    }
+
+    function selectChoose() {
+      let text = this.innerHTML,
+        select = this.closest('.select-custom-js'),
+        selectDataValue = this.dataset.selectValue;
+      if (select) {
+        currentText = select.querySelector('.select__current');
+        currentInput = select.querySelector('input');
+
+        currentText.innerHTML = text;
+        currentInput.value = selectDataValue;
+      }
+      select.classList.remove('is-active');
+    }
+  };
+  select();
+  //======================== ALL SELECT END
 });
