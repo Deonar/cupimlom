@@ -12,17 +12,19 @@ get_header();
   
   <section class="user-wrapp padding-normal ">
     <div class="container-wrapper">
-      <div class="user-body d-flex justify-content-between">
-        <div class="user-info__wrapp">
-          <div class="user-photo">
-            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/user-logo.jpg" alt=""> -->
+      <div class="user-body__wrapp">
+        <div class="user-body d-flex justify-content-between">
+          <div class="user-info__wrapp">
+            <div class="user-photo">
+              <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/user-logo.jpg" alt=""> -->
+            </div>
+            <div class="user-text">
+              <div class="user-name">Алексей</div>
+              <a href="#" class="user-link text-link_red">Изменить фотографию</a>
+            </div>
           </div>
-          <div class="user-text">
-            <div class="user-name">Алексей</div>
-            <a href="#" class="user-link text-link_red">Изменить фотографию</a>
-          </div>
+          <a href="#" class="user-btn btn btn_light_border">Выйти</a>
         </div>
-        <a href="#" class="user-btn btn btn_light_border">Выйти</a>
       </div>
     </div>
   </section>

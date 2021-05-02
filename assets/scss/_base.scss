@@ -325,6 +325,10 @@ body {
   }
 }
 
+.daterangepicker .ranges li.active {
+  background-color: $accent-red;
+}
+
 //Custom select
 .selectize-input {
   font-weight: bold;

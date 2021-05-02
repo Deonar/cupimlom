@@ -127,6 +127,7 @@ jQuery(document).ready(function ($) {
   if (document.documentElement.clientWidth < 420) {
     $('.daterange-input').attr('readonly', 'readonly');
   }
+
   //======================== daterangepicker profile end
 
   //======================== ALL SELECT

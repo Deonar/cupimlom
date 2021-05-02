@@ -5,6 +5,10 @@
     width: 100%;
     max-width: 430px;
   }
+  &-body__wrapp {
+    width: 100%;
+    max-width: 1070px;
+  }
   &-info__wrapp {
     display: flex;
     align-items: center;
@@ -51,6 +55,7 @@
 
   &-body {
     display: flex;
+    justify-content: center;
   }
   &-head {
   }
