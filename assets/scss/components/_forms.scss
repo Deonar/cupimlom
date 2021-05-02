@@ -29,6 +29,11 @@
       outline: none;
       border: 1px solid $accent-red;
       transition: all 0.3s ease;
+      & + .main-form__input-line {
+        width: 100%;
+        background: $accent-red;
+        transition: all 0.3s ease;
+      }
     }
   }
   &__label {
@@ -47,6 +52,16 @@
     max-width: 175px;
     margin-top: 5px;
   }
+  &__input-line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background: transparent;
+    transition: all 0.3s ease;
+  }
   &__phone {
     max-width: 200px;
   }
@@ -62,6 +77,11 @@
         border: 1px solid $accent-red;
         transition: all 0.3s ease;
         color: $accent-red;
+      }
+      .main-form__input-line {
+        transition: all 0.3s ease;
+        width: 100%;
+        background: $accent-red;
       }
       .main-form__label-error {
         display: block;
@@ -95,6 +115,11 @@
       .main-form__input {
         border: 1px solid $accent-red;
         transition: all 0.3s ease;
+      }
+      .main-form__input-line {
+        transition: all 0.3s ease;
+        width: 100%;
+        background: $accent-red;
       }
       &:after {
         content: '';

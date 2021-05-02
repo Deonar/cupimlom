@@ -348,6 +348,81 @@
   }
 }
 
+.authorization {
+  .cabitet-block {
+    border-radius: 10px;
+    padding: 50px;
+    background-image: url(../img/bg/cabinet-bg-small.jpg);
+  }
+  &-body {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  &-left__content {
+    width: 100%;
+    max-width: 640px;
+    margin-right: 50px;
+  }
+  &-right__content {
+    width: 100%;
+    max-width: 420px;
+  }
+  &-form__arrow {
+    position: relative;
+    padding-left: 70px;
+    line-height: 50px;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      border: 1px solid #333;
+      display: block;
+      border-radius: 50%;
+      background: url(../img/icons/arrow-left.svg) center center no-repeat;
+    }
+  }
+  &-form {
+    .main-form {
+      &__input-wrapp {
+        max-width: 100%;
+      }
+      &__input {
+        border: none;
+        border-bottom: 2px solid #333;
+        border-radius: 0;
+        outline: none;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 80px;
+        height: 80px;
+        padding-left: 0px;
+        background: #ffffff;
+      }
+    }
+  }
+  &-confirm__sms {
+    margin-right: 60px;
+    width: 100%;
+    max-width: 100px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #a2a6ab;
+  }
+  &-confirm__sms-timer {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    min-width: 40px;
+  }
+}
+
 @media (max-width: 1200px) {
   .profile-tabs {
     max-width: 320px;
@@ -449,6 +524,15 @@
       display: none;
     }
   }
+
+  .authorization {
+    &-left__content {
+      display: none;
+    }
+    &-right__content {
+      margin: 0 auto;
+    }
+  }
 }
 
 @media (max-width: 360px) {
@@ -468,6 +552,15 @@
     &-card__head {
       padding-left: 20px;
       padding-right: 20px;
+    }
+  }
+
+  .authorization {
+    &-form .main-form__input {
+      font-size: 30px;
+    }
+    &-confirm__sms {
+      margin-right: 30px;
     }
   }
 }

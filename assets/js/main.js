@@ -6,6 +6,9 @@ jQuery(document).ready(function ($) {
     $('body').toggleClass('overflow-h');
   });
 
+  // ======================== MASK
+  $('.mask-phone').mask('+7 999 999-99-99');
+
   //Height is equal to width
   function equalHeight(elem) {
     var widthElement = $(elem).width();
@@ -47,9 +50,6 @@ jQuery(document).ready(function ($) {
     step: 0.1,
   });
 
-
-
-  
   //======================== tabs
   $('.tab-wrapper-js').on('click', '.tab-js', function (event) {
     var tab = $(this).attr('data-tab');
@@ -63,19 +63,6 @@ jQuery(document).ready(function ($) {
       .show();
   });
   //======================== tabs  end
-
-  //======================== profile edit form
-  //show edit block form
-  $('.profile-blocks-js').on('click', '.run-edit-js', function (event) {
-    $(this).closest('.profile-blocks-js').find('.completed-form-js').removeClass('active');
-    $(this).closest('.profile-blocks-js').find('.edit-form-js').addClass('active');
-  });
-  //hide edit block form
-  $('.profile-blocks-js').on('click', '.save-edit-js', function (event) {
-    $(this).closest('.profile-blocks-js').find('.completed-form-js').addClass('active');
-    $(this).closest('.profile-blocks-js').find('.edit-form-js').removeClass('active');
-  });
-  //========================  profile edit form end
 
   //accordeon
   $('.accordeon-tab-js').click(function (event) {
@@ -91,47 +78,6 @@ jQuery(document).ready(function ($) {
     }
   });
   //accordeon end
-
-  //======================== daterangepicker profile
-  // predefined ranges
-  var start = moment().subtract(29, 'days');
-  var end = moment();
-
-  $('.daterange-input').daterangepicker(
-    {
-      locale: {
-        format: 'MM/DD/YYYY',
-        separator: ' - ',
-        applyLabel: 'Выбрать',
-        cancelLabel: 'Отмена',
-        fromLabel: 'От',
-        toLabel: 'До',
-        customRangeLabel: 'Своя дата',
-        daysOfWeek: ['Вс', 'Пт', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-        monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-        firstDay: 1,
-      },
-      startDate: start,
-      endDate: end,
-      ranges: {
-        Cегодня: [moment(), moment()],
-        Вчера: [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-        'За 7 дней': [moment().subtract(6, 'days'), moment()],
-        'За 30 дней': [moment().subtract(29, 'days'), moment()],
-        'За месяц': [moment().startOf('month'), moment().endOf('month')],
-        'За прошлый месяц': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')],
-      },
-    },
-    function (start, end, label) {
-      $('#kt_daterangepicker_6 .form-control').val(start.format('MM/DD/YYYY') + ' / ' + end.format('MM/DD/YYYY'));
-    }
-  );
-
-  if (document.documentElement.clientWidth < 420) {
-    $('.daterange-input').attr('readonly', 'readonly');
-  }
-
-  //======================== daterangepicker profile end
 
   //======================== ALL SELECT
   let select = function () {
@@ -164,6 +110,16 @@ jQuery(document).ready(function ($) {
       select.classList.remove('is-active');
     }
   };
+  $(document).mouseup(function (e) {
+    var select = $('.select');
+    var actions = $('.actions-content-show-js, .header-top__location');
+    if (e.target != select[0] && select.has(e.target).length === 0) {
+      $('.select').removeClass('is-active');
+    }
+    if (e.target != actions[0] && actions.has(e.target).length === 0) {
+      actions.removeClass('active');
+    }
+  });
   select();
   //======================== ALL SELECT END
 });
