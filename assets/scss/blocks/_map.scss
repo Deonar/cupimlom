@@ -1,0 +1,116 @@
+.yandex-map {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.map {
+    &__wrapper {
+        position: relative;
+        height: 600px;
+        width: 100%;
+        padding: 50px 70px;
+    }
+    &-card {
+        z-index: 10;
+        position: relative;
+        max-width: 420px;
+        &__wrapper {
+            padding: 30px;
+            background-color: #fff;
+            max-width: 420px;
+            border-radius: 10px;
+        }
+        &__top{
+            
+        }
+        &__item {
+        }
+        &__addres-link {
+            display: none;
+        }
+        &__time{
+            margin-bottom: 50px;
+        }
+        &__city {
+        }
+        &__street {
+        }
+        &__phone {
+            font-family: "RobotoCondensed";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 42px;
+            text-transform: uppercase;
+        }
+        &__control{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .map {
+        &__wrapper {
+            height: auto;
+            padding: 0 20px;
+            margin-bottom: 80px;
+        }
+        &-card {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            &__addres-link {
+                display: inline-block;
+            }
+            &__wrapper {
+                max-width: 100%;
+                border: 1px solid $gray-light;
+            }
+            &__top{
+                display: flex;
+                justify-content: space-between;
+            }
+            &__bottom{
+                display: flex;
+                justify-content: space-between
+            }
+            &__time{
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .map {
+        &__wrapper {
+        }
+        &-card {
+            &__addres-link {
+                margin-top: 15px;
+                display: inline-block;
+            }
+            &__top{
+                display: block;
+            }
+            &__bottom{
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    .map {
+        &-card {
+            &__phone {
+                font-size: 32px;
+            }
+        }
+    }
+}

@@ -47,6 +47,9 @@ jQuery(document).ready(function ($) {
     step: 0.1,
   });
 
+
+
+  
   //======================== tabs
   $('.tab-wrapper-js').on('click', '.tab-js', function (event) {
     var tab = $(this).attr('data-tab');

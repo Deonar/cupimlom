@@ -651,4 +651,6 @@ get_header();
     </div>
 </section>
 
+<?php get_template_part('template-parts/map'); ?>
+
 <?php get_footer();

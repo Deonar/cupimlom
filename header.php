@@ -20,6 +20,8 @@
   <link rel="profile" href="https://gmpg.org/xfn/11">
 
   <?php wp_head(); ?>
+  <?php get_template_part('inc/js_var'); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
